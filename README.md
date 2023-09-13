@@ -1,52 +1,81 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/yXIQAqiF)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10831394&assignment_repo_type=AssignmentRepo)
-# LamdbaVibe
+Instrument Visualizer Web App
+Welcome to the Instrument Visualizer Web App! This project showcases five different musical instruments, each with its unique visualizer. In this README, you'll find all the information you need to get started with this TypeScript web app.
 
-CSC 600 musical application. Get ready to shred.
+Instrument Visualizer Web App
 
-## Client
+Table of Contents
+Introduction
+Prerequisites
+Getting Started
+Project Structure
+Features
+Usage
+Contributing
+License
+1. Introduction
+The Instrument Visualizer Web App is an interactive web application developed in TypeScript. It allows users to explore and experience the visualizations of five different musical instruments in real-time. Whether you're a music enthusiast or a developer looking to expand your web development skills, this project offers a unique and engaging experience.
 
-The client contains the code which you will modify as part of the course. It constitutes the frontend (UI) portion of this web application.
+2. Prerequisites
+Before you start working with the Instrument Visualizer Web App, make sure you have the following prerequisites:
 
-In the `client` directory, you can run:
+Node.js: Ensure you have Node.js installed on your system.
+3. Getting Started
+Client
+The client directory contains the frontend (UI) portion of this web application. You can run the client with the following commands:
 
-### `npm start`
+npm start: Runs the app in the development mode. Open http://localhost:3000 to view it in the browser. The page will reload if you make edits, and you will see any lint errors in the console.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+npm run build: Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance. Your app is ready to be deployed.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+npm run prod: This command combines npm run build and python3 http.server. It starts a web server that hosts your app at http://localhost:3002, allowing you to interact with a live, production server.
 
-### `npm run build`
+Learn more about CRA (Create React App) in the Create React App documentation.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Server
+The server directory contains the backend code included as a reference and pedagogical tool. You will run a version of the server locally for testing purposes and switch to talking to a production server when jamming with your classmates. To start the server, use the following command:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start: Runs the server in development mode. The server will restart if you make edits, and errors will be displayed in the console.
+4. Project Structure
+The project structure is organized as follows:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+php
+Copy code
+instrument-visualizer/
+├── client/                 # Frontend (UI) code
+│   ├── src/                # Source code
+│   ├── public/             # Public assets (HTML, manifest, icons)
+│   ├── package.json        # Project dependencies and scripts
+│   └── ...
+├── server/                 # Backend code
+│   ├── src/                # Source code
+│   ├── package.json        # Project dependencies and scripts
+│   └── ...
+├── package.json            # Main project dependencies and scripts
+├── tsconfig.json           # TypeScript configuration
+└── ...
+5. Features
+Five Instruments: Explore visualizations for five different musical instruments.
+Real-Time Visuals: Witness real-time visual effects synced with instrument sounds.
+User Interaction: Interact with the visualizations using your mouse or keyboard.
+Responsive Design: Enjoy the app on various screen sizes and devices.
+6. Usage
+Launch the web app by following the "Getting Started" steps for the client and server sections.
+Choose an instrument to visualize from the navigation menu.
+Interact with the visualization using your mouse or keyboard.
+Enjoy the unique visual experience and the corresponding instrument sounds.
+7. Contributing
+We welcome contributions to enhance the Instrument Visualizer Web App, add new instruments and visualizations, or improve the server and client code. If you'd like to contribute, please follow these steps:
 
-### `npm run prod`
+Fork the repository.
+Create a new branch for your feature or enhancement: git checkout -b feature-name.
+Implement your changes and commit them: git commit -m 'Description of your changes'.
+Push your changes to your fork: git push origin feature-name.
+Create a pull request to the main repository.
+8. License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-This is a combination of `npm run build` and python3 `http.server`. This will start a new web server that hosts your app at [http://localhost:3002](http://localhost:3002). Rather than talking to your local environment, it will talk to a live, production server so you can jam with your group.
+Explore the world of musical instruments through visualizations with the Instrument Visualizer Web App. We hope you enjoy the immersive experience and consider contributing to make it even better. If you have any questions, feedback, or encounter any issues, please feel free to open an issue in the repository. Have a fantastic time exploring the world of music!
 
-### Learn More about CRA (Create React App)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Server
-
-The server contains the backend code which is included here as a reference and as a pedagogical tool. Peruse the code to figure out how it works and how you ought to call the API. You will run a version of the server locally for testing purposes. Once you're ready to jam with your classmates, you will switch to talking to a production server. See `npm run prod` for details.
-
-In the `server` directory, you can run:
-
-### `npm start`
-
-Runs the server in development mode.
-
-The server will restart if you make edits.
-You will also see errors in the console.
